@@ -2,10 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { ToDosComponent } from './components/to-dos/to-dos.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ToDosComponent
   ],
   imports: [
     BrowserModule
