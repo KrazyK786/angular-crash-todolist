@@ -13,6 +13,8 @@ export class ToDosComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
+    // Set dummy data
     this.toDos = [
       {
         id: 1,
@@ -31,5 +33,4 @@ export class ToDosComponent implements OnInit {
       }
     ];
   }
-
 }
