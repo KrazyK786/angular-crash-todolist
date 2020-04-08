@@ -35,13 +35,11 @@ export class TodoItemComponent implements OnInit {
     this.todoService.toggleCompleted(todo).subscribe(returnedTodo => {
       console.log(returnedTodo);
     });
-    console.log('This is onTogle! ' + todo.completed);
   }
 
   // Delete from server
   onDelete(todo){
     this.deleteTodo.emit(todo);
-    console.log('Delete was clicked! ' + todo.completed);
   }
 
 }

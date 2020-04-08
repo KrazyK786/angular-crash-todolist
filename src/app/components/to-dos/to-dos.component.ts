@@ -19,4 +19,12 @@ export class ToDosComponent implements OnInit {
       this.toDos = todos;
     });
   }
+
+  deleteTodo(todo: Todo){
+    // Handle UI deletion (could be moved to service, but this way should be faster from not having to wait
+    this.toDos = this.toDos.filter(t => t.id !== todo.id);
+
+    // Handle server
+    this.todoService.deleteTodo(todo).subscribe();
+  }
 }
