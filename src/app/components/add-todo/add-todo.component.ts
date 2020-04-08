@@ -23,6 +23,9 @@ export class AddTodoComponent implements OnInit {
     };
 
     this.addTodo.emit(todo);
+
+    // this clears out the input field; remove to keep user submission in field
+    this.title = '';
   }
 
 }
