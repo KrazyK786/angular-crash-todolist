@@ -9,6 +9,7 @@ import { HeaderComponent } from './components/layout/header/header.component';
 import { AddTodoComponent } from './components/add-todo/add-todo.component';
 import {FormsModule} from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+import { AboutComponent } from './components/pages/about/about.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AppRoutingModule } from './app-routing.module';
     ToDosComponent,
     TodoItemComponent,
     HeaderComponent,
-    AddTodoComponent
+    AddTodoComponent,
+    AboutComponent
   ],
     imports: [
         BrowserModule,
